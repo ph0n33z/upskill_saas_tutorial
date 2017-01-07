@@ -17,9 +17,13 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
  
+ // Typography Styles 
+ 
  h1, h2, h3 {
      font-family: "Open Sans", sans-serif;
  }
+
+// Background Gradient
 
 .navbar, .home-callout {
  //Gradient provided by @_ighosh at uiGradients.com
@@ -29,13 +33,18 @@
  border: none;
 }
 
-.navbar-default .navbar-brand {
+// Nav Styles
+
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-nav > li > a {
   color: #FFFFFF;
+  &:hover {
+    color: #FFFFFF;
+  opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-nav > li > a{
-  color: #FFFFFF;
-}
+// Homepage Styles
 
 .home-callout {
   color: white;
